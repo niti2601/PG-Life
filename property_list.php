@@ -18,6 +18,7 @@ if (!$city) {
 }
 $city_id = $city['id'];
 
+
 $sql_2 = "SELECT * FROM properties WHERE city_id = $city_id";
 $result_2 = mysqli_query($conn, $sql_2);
 if (!$result_2) {
